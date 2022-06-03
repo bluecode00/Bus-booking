@@ -1,0 +1,230 @@
+﻿<section class="home" id="home">
+    <div class="container">
+        <h1>Make Memories</h1>
+
+        <div class="mt-4">
+            <form>
+                <div class="row">
+                    <div class="col-md-3 text-white fw-bolder">
+                        <label for="from" class="mb-2">From:</label>
+                        <select name="startLocation" class="form-select form-select" id="from-place" asp-items="@ViewBag.Cities">
+                            <option selected disabled>Start Location</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 text-white fw-bolder ">
+                        <label for="from" class="mb-2">To:</label>
+                        <select name="endLocation" class="form-select form-select" asp-items="@ViewBag.Cities">
+                            <option selected disabled>End Location</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 text-white fw-bolder">
+                        <label for="date-start" class="mb-2">Check In:</label>
+                        <input type="date" class="form-control" name="Date" />
+                    </div>
+                    <div class="col-md-3">
+                        <label class="mb-2">&nbsp</label>
+                        <button type="submit" class="btn btn-danger w-100 text-white fw-bolder"> Find My Journey </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Play List -->
+        <div class="play-list">
+            <div class="carousel">
+                <div class="slider">
+
+                    <div class="card">
+                        <div class="card-bg"
+                             style="background-image: url(/img/b1.jpg);">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-bg"
+                             style="background-image: url(/img/b2.jpg);">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-bg"
+                             style="background-image: url(/img/b3.jpg);">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-bg"
+                             style="background-image: url(/img/b1.jpg);">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-bg"
+                             style="background-image: url(/img/b2.jpg);">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-bg"
+                             style="background-image: url(t/img/b3.jpg);">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-bg"
+                             style="background-image: url(/img/b1.jpg);">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-bg"
+                             style="background-image: url(/img/b2.jpg);">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-bg"
+                             style="background-image: url(/img/b3.jpg);">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-bg"
+                             style="background-image: url(/img/b1.jpg);">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="wrapper2">
+    <div class="container">
+        <div class="heading mtop">
+            <h5>FACILITIES</h5>
+            <h2>Giving entirely awesome </h2>
+        </div>
+
+        <div class="content grid mtop">
+            <div class="box">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>Pick Up & Drop</h3>
+                <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
+                <span class='far fa-long-arrow-alt-right'></span>
+            </div>
+            <div class="box">
+                <i class="fas fa-mug-hot"></i>
+                <h3>Pick Up & Drop</h3>
+                <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
+                <span class='far fa-long-arrow-alt-right'></span>
+            </div>
+            <div class="box">
+                <i class="fas fa-car"></i>
+                <h3>Pick Up & Drop</h3>
+                <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
+                <span class='far fa-long-arrow-alt-right'></span>
+            </div>
+            <div class="box">
+                <i class="far fa-water"></i>
+                <h3>Pick Up & Drop</h3>
+                <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
+                <span class='far fa-long-arrow-alt-right'></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="timer about wrapper">
+    <div class="background"> </div>
+    <div class="container">
+        <div class="heading">
+            <h5>LAST MINUTE!</h5>
+            <h2> <span>Incredible!</span> Are you coming today</h2>
+        </div>
+
+        <div id="time" class="flex1 mtop"> </div>
+    </div>
+</section>
+<script src="js/jquery.countdown.js" charset="utf-8"></script>
+<script src="js/jquery.countdown.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    $('#time').countdown('2024/01/01', function (event) {
+      $(this).html(event.strftime(
+        '<div class="clock"><span>%d</span> <p>Days</p></div> ' +
+        '<div class="clock"><span>%H</span> <p>Hours</p></div> ' +
+        '<div class="clock"><span>%M</span> <p>Minutes</p></div> ' +
+        '<div class="clock"><span>%S</span> <p>Seconds</p></div> '
+      ));
+    });
+</script>
+
+<section class="blog top" id="blog">
+    <div class="container">
+        <div class="heading">
+            <h5>OUR BLOG</h5>
+            <h3>News & articles updates</h3>
+        </div>
+
+        <div class="content grid mtop">
+            <div class="box">
+                <div class="img">
+                    <img src="~/img/b1.jpg" alt="">
+                    <span>HOTEL</span>
+                </div>
+                <div class="text">
+                    <div class="flex">
+                        <i class="far fa-user"> <label>Admin</label> </i>
+                        <i class="far fa-comments"> <label>Comment</label> </i>
+                    </div>
+                    <h3>Celebrating Decade Years Of Hotel In 2020</h3>
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.
+                    </p>
+                    <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="/img/b2.jpg" alt="">
+                    <span>HOTEL</span>
+                </div>
+                <div class="text">
+                    <div class="flex">
+                        <i class="far fa-user"> <label>Admin</label> </i>
+                        <i class="far fa-comments"> <label>Comment</label> </i>
+                    </div>
+                    <h3>Celebrating Decade Years Of Hotel In 2020</h3>
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.
+                    </p>
+                    <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="/img/b3.jpg" alt="">
+                    <span>HOTEL</span>
+                </div>
+                <div class="text">
+                    <div class="flex">
+                        <i class="far fa-user"> <label>Admin</label> </i>
+                        <i class="far fa-comments"> <label>Comment</label> </i>
+                    </div>
+                    <h3>Celebrating Decade Years Of Hotel In 2020</h3>
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.
+                    </p>
+                    <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
