@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fPV7AYjUVVH6nbpmu8wTi/d4UG7g23Vx0uNAKa0s/81qlgpdaralEBxZT7MeABL9XBO1We6tS60q6ZJ9IuANyg==",
+  "dgSpecHash": "kjQC5kbweB5nuoQt4qstFn6pBmK/UtASXGGOC4MSPxSNo2ExsRBDpnu+YGy7h508WREwlHRR7FmX6mEBRImC/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Wissen\\Desktop\\Bus-Ticket-Booking\\Bus-Ticket-Booking.Entity\\Bus-Ticket-Booking.Entity.csproj",
+  "projectFilePath": "C:\\Users\\Wissen\\Desktop\\Bus-booking\\Bus-Ticket-Booking\\Bus-Ticket-Booking.Entity\\Bus-Ticket-Booking.Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
