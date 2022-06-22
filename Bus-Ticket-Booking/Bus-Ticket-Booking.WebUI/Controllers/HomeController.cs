@@ -70,9 +70,5 @@ namespace Bus_Ticket_Booking.WebUI.Controllers
             };
             return View(routeTicket);
         }
-        public IActionResult About()
-        {
-            return View();
-        }
     }
 }

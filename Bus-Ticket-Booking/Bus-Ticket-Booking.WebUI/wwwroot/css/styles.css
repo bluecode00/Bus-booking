@@ -180,7 +180,7 @@ header.sticky {
     margin-top:50px;
     width:45%;
     float: right;
-    background-color: wheat;
+    background-color:azure;
     padding: 100px;
 }
 
@@ -310,6 +310,28 @@ header.sticky {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 }
+.ticket {
+    margin: auto;
+    display: flex;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.ticket-info {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.ticket-number {
+    max-height: 250px;
+    max-width: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5px;
+}
 
 .home {
     background-image: url("../img/home.png");
@@ -324,6 +346,12 @@ header.sticky {
     .home h1 {
         font-family: 'Great Vibes', cursive;
         font-size: 100px;
+        color: white;
+        padding-top: 50px;
+    }
+    .home h2 {
+
+        font-size: 50px;
         color: white;
         padding-top: 50px;
     }
@@ -362,93 +390,7 @@ button span {
 
 
 /*** Play List ***/
-.play-list {
-    margin: 20px 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem;
-}
 
-.carousel .slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.carousel .card {
-    margin: 0 1rem;
-    overflow: hidden;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 35, 0.25);
-    border-radius: 8px;
-    height: 200px;
-    width: 200px;
-    display: block;
-    position: relative;
-    background-position: 50%;
-    background-size: cover;
-    cursor: pointer;
-    transition: width 0.26s ease-in-out, height 0.26s ease-in-out;
-}
-
-    .carousel .card::after {
-        background: rgba(0, 0, 0, 0.6);
-        content: "";
-        top: 0;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-
-
-    .carousel .card.is-custom-selected {
-        width: 250px;
-        height: 250px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-        .carousel .card.is-custom-selected::after {
-            background: none;
-        }
-
-.carousel .card-bg {
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-}
-
-.carousel .flickity-enabled {
-    position: relative;
-}
-
-    .carousel .flickity-enabled:focus {
-        outline: none;
-    }
-
-.carousel .flickity-viewport {
-    position: relative;
-    height: 100%;
-}
-
-.carousel .flickity-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
 
 /*------------home------------*/
 /*------------about------------*/
@@ -1227,4 +1169,82 @@ footer .content {
     .offer2.wrapper {
         height: 170vh;
     }
+}
+/*HOME CAROUSEL*/
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+input[type=radio] {
+    display: none;
+}
+
+.slider-card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+}
+
+.slider-home {
+    width: 100%;
+    max-height: 600px;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top:70px
+}
+
+.slider-cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#item-1:checked ~ .slider-cards #song-3, #item-2:checked ~ .slider-cards #song-1, #item-3:checked ~ .slider-cards #song-2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .slider-cards #song-2, #item-2:checked ~ .slider-cards #song-3, #item-3:checked ~ .slider-cards #song-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .slider-cards #song-1, #item-2:checked ~ .slider-cards #song-2, #item-3:checked ~ .slider-cards #song-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+    img
+
+{
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+
+#item-2:checked ~ .player #test {
+    transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test {
+    transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test {
+    transform: translateY(-80px);
 }

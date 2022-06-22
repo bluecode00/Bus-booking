@@ -39,37 +39,37 @@
 
     <header class="header">
         <div class="container">
-            <nav class="navbar flex1 justify-content-end">
-                <div class="">
+            <nav class="navbar justify-content-end">
+                
+                <div>
+                    <ul class="nav-menu">
+                        <li> <a asp-controller="home" asp-action="index">Home</a> </li>
+                        <li> <a asp-controller="home" asp-action="About">About</a> </li>
+                        <li> <a href="/#blog">Blog</a> </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            if (User.IsInRole("Admin"))
+                            {
+                                <li> <a href="/admin/adminList">Admin</a></li>
+                            }
+                        }
+                        <li> <a href="#contact">contact</a> </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a href="/account/logout" class="btn btn-primary">Log out</a>
+                        }
+                        else
+                        {
+                            <a href="/account/login" class="btn d-block btn-primary mx-2">Login</a>
+                            <a href="/account/register" class=" btn btn-warning">Register</a>
+                        }
 
+
+                    </ul>
                 </div>
 
-                <ul class="nav-menu">
-                    <li> <a asp-controller="home" asp-action="index">Home</a> </li>
-                    <li> <a asp-controller="home" asp-action="About">About</a> </li>
-                    <li> <a href="/#blog">Blog</a> </li>
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        if (User.IsInRole("Admin"))
-                        {
-                            <li> <a href="/admin/adminList">Admin</a></li>
-                        }
-                    }
-                    <li> <a href="#contact">contact</a> </li>
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        <a href="/account/logout" class="btn btn-primary">Log out</a>
-                    }
-                    else
-                    {
-                        <a href="/account/login" class="btn d-block btn-primary mx-2">Login</a>
-                        <a href="/account/register" class=" btn btn-warning">Register</a>
-                    }
-
-
-                </ul>
                 <div class="d-flex">
-                    
+
 
 
                 </div>

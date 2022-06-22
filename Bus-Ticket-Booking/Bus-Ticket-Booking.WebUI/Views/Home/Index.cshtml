@@ -3,7 +3,7 @@
         <h1>Make Memories</h1>
 
         <div class="mt-4">
-            <form>
+            <form action="/home/index">
                 <div class="row">
                     <div class="col-md-3 text-white fw-bolder">
                         <label for="from" class="mb-2">From:</label>
@@ -28,74 +28,39 @@
                 </div>
             </form>
         </div>
-        <!-- Play List -->
-        <div class="play-list">
-            <div class="carousel">
-                <div class="slider">
-
-                    <div class="card">
-                        <div class="card-bg"
-                             style="background-image: url(/img/b1.jpg);">
+        <div class="row">
+            <div class="col-md-3 text-white fw-bolder mt-4">
+                <div class="mt-5">
+                    <label class="mb-2">Ticket Check:</label>
+                    <form action="home/search">
+                        <div class="">
+                            <input type="search" class="form-control" name="PeronNumber" placeholder="Search with PRN..." required />
+                            <button type="submit" class="form-control btn-danger mt-2">Search</button>
                         </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-bg"
-                             style="background-image: url(/img/b2.jpg);">
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-bg"
-                             style="background-image: url(/img/b3.jpg);">
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-bg"
-                             style="background-image: url(/img/b1.jpg);">
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-bg"
-                             style="background-image: url(/img/b2.jpg);">
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-bg"
-                             style="background-image: url(t/img/b3.jpg);">
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-bg"
-                             style="background-image: url(/img/b1.jpg);">
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-bg"
-                             style="background-image: url(/img/b2.jpg);">
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-bg"
-                             style="background-image: url(/img/b3.jpg);">
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-bg"
-                             style="background-image: url(/img/b1.jpg);">
-                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-9 ">
+                <div class="slider-home">
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2">
+                    <input type="radio" name="slider" id="item-3">
+                    <div class="slider-cards">
+                        <label class="slider-card" for="item-1" id="song-1">
+                            <img src="~/img/bus2.jpg" alt="song">
+                        </label>
+                        <label class="slider-card" for="item-2" id="song-2">
+                            <img src="~/img/bus1.jpg" alt="song">
+                        </label>
+                        <label class="slider-card" for="item-3" id="song-3">
+                            <img src="~/img/bus3.jpg" alt="song">
+                        </label>
                     </div>
 
                 </div>
             </div>
         </div>
+        
     </div>
 </section>
 

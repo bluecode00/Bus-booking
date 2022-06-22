@@ -14,20 +14,20 @@
         </div>
 
         <div class="col-md-10">
-            <h1 class="h3"> Bilet Kontrol</h1> <hr /> <br />
+            <h1 class="h3"> Check Ticket</h1> <hr /> <br />
             <table class="table table table-bordered shadow-sm mt-3">
                 <thead>
                     <tr>
                         <th style="width:20px;">BiletID</th>
-                        <th style="width:145px;">Ad - Soyad</th>
-                        <th style="">Tel</th>
-                        <th>Peron Number</th>
-                        <th style="width:25px;">Başlangıç</th>
-                        <th style="width:25px;">Bitiş</th>
-                        <th style="width:70px;">KoltukNo</th>
-                        <th style="width:80px;">Fiyat</th>
-                        <th style="width:85px;">GüzergahNo</th>
-                        <th style="width:165px;">İptal</th>
+                        <th style="width:200px;">First name - Last name</th>
+                        <th style="" width=120px>Phone</th>
+                        <th style="width:90px">Peron No</th>
+                        <th style="width:25px;">Start</th>
+                        <th style="width:25px;">End</th>
+                        <th style="width:80px;">Seat No</th>
+                        <th style="width:80px;">Price</th>
+                        <th style="width:85px;">Route No</th>
+                        <th style="width:165px;">#</th>
                     </tr>
                 <tbody>
                     @if (Model.Tickets.Count > 0)
@@ -47,7 +47,7 @@
     <td>
         <form action="CancelTicket" method="POST" style="display:inline;">
             <input type="hidden" name="ticketId" value="@item.TicketId" />
-            <button type="submit" class="btn btn-danger btn-md mr-2" style="color: white;">Bileti İptal Et</button>
+            <button type="submit" class="btn btn-danger btn-md mr-2" style="color: white;">Cancel Ticket</button>
         </form>
 
     </td>
@@ -55,7 +55,7 @@
     else
     {
 <tr>
-    <td>Sistemde henüz kayıtlı bilet yok!</td>
+    <td>EMPTY</td>
 </tr>}
                 </tbody>
 

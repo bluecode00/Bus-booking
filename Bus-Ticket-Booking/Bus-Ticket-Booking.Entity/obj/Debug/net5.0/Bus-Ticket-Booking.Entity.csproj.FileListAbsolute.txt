@@ -58,3 +58,15 @@ C:\Users\Wissen\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity
 C:\Users\Wissen\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\obj\Debug\net5.0\Bus-Ticket-Booking.Entity.dll
 C:\Users\Wissen\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\obj\Debug\net5.0\ref\Bus-Ticket-Booking.Entity.dll
 C:\Users\Wissen\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\obj\Debug\net5.0\Bus-Ticket-Booking.Entity.pdb
+C:\Users\Gezgin\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\bin\Debug\net5.0\Bus-Ticket-Booking.Entity.deps.json
+C:\Users\Gezgin\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\bin\Debug\net5.0\Bus-Ticket-Booking.Entity.dll
+C:\Users\Gezgin\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\bin\Debug\net5.0\ref\Bus-Ticket-Booking.Entity.dll
+C:\Users\Gezgin\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\bin\Debug\net5.0\Bus-Ticket-Booking.Entity.pdb
+C:\Users\Gezgin\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\obj\Debug\net5.0\Bus-Ticket-Booking.Entity.csproj.AssemblyReference.cache
+C:\Users\Gezgin\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\obj\Debug\net5.0\Bus-Ticket-Booking.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gezgin\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\obj\Debug\net5.0\Bus-Ticket-Booking.Entity.AssemblyInfoInputs.cache
+C:\Users\Gezgin\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\obj\Debug\net5.0\Bus-Ticket-Booking.Entity.AssemblyInfo.cs
+C:\Users\Gezgin\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\obj\Debug\net5.0\Bus-Ticket-Booking.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Gezgin\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\obj\Debug\net5.0\Bus-Ticket-Booking.Entity.dll
+C:\Users\Gezgin\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\obj\Debug\net5.0\ref\Bus-Ticket-Booking.Entity.dll
+C:\Users\Gezgin\Desktop\Bus-booking\Bus-Ticket-Booking\Bus-Ticket-Booking.Entity\obj\Debug\net5.0\Bus-Ticket-Booking.Entity.pdb
