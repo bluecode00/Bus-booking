@@ -43,8 +43,8 @@
                 
                 <div>
                     <ul class="nav-menu">
-                        <li> <a asp-controller="home" asp-action="index">Home</a> </li>
-                        <li> <a asp-controller="home" asp-action="About">About</a> </li>
+                        <li> <a asp-controller="Home" asp-action="index">Home</a> </li>
+                        <li> <a asp-action="About" asp-controller="Home" >About</a> </li>
                         <li> <a href="/#blog">Blog</a> </li>
                         @if (User.Identity.IsAuthenticated)
                         {

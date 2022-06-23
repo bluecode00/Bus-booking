@@ -313,8 +313,11 @@ header.sticky {
 .ticket {
     margin: auto;
     display: flex;
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background: #004f8f;
+    border-radius: 15px;
+    border-style: dotted;
+    border-color: white;
+    color:white;
 }
 .ticket-info {
     padding: 0px 30px;
@@ -323,6 +326,7 @@ header.sticky {
     text-align: center;
     justify-content: space-between;
     align-items: center;
+    border-right:2px white solid;
 }
 .ticket-number {
     max-height: 250px;
@@ -439,7 +443,6 @@ h3 {
 
 p {
     line-height: 30px;
-    color: #a4a4a4;
     margin-bottom: 20px;
     font-size: 15px;
 }
@@ -574,7 +577,7 @@ p {
 .timer {
     position: relative;
     text-align: center;
-    padding-top: 12%;
+    padding-top: 15%;
 }
 
 .background::after {
@@ -583,13 +586,15 @@ p {
     top: 0;
     left: 0;
     content: '';
-    background: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
 }
 
 .timer.wrapper {
-    background-image: url("/img/w2.jpg");
+    background-image: url("/img/busbanner.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    
 }
 
 .timer.about::after {
@@ -606,7 +611,7 @@ p {
 
 .timer h2,
 .timer h5 {
-    color: white;
+    color: dodgerblue;
     text-align: center;
 }
 
@@ -1230,11 +1235,9 @@ img {
     transform: translatex(0) scale(1);
     opacity: 1;
     z-index: 1;
-    img
-
-{
-    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
+
+
 
 
 #item-2:checked ~ .player #test {

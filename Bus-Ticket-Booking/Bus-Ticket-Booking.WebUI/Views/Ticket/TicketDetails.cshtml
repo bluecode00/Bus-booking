@@ -8,32 +8,36 @@
         <br /><p> Mr./Mrs. @Model.Ticket.CostumerName @Model.Ticket.CosturmerSurname, your ticket request from @Model.Ticket.TravelFrom to @Model.Ticket.TravelTo has been successfully defined.</p>
         <h3>Your Ticket</h3>
         <br />
-        <div class="form-group container">
-            <div class="row">
-                <div class="col-md-6 p-0">
-                    <div class="card border-info pt-2" style="border-right: 2px dotted black !important">
-                        <div class="d-flex justify-content-center align-items-center" style="border-radius:203px; height:203px; width:203px; background: #F8FAF5; margin:0 auto;">
-                            <i class="fas fa-check-circle" style="font-size:156px; color:green;"></i>
-                        </div>
-                        <h3 class="mt-1">Success</h3>
-                        <h2> PRN Number: @Model.Ticket.PeronNumber</h2>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0">
-                    <div class="card border-info pt-2 container-fluid" style="border-left: 2px dotted black !important">
-                        <hr />
-                        <div class="d-flex justify-content-around">
-                            <p>DATE: @Model.Date</p><p>Time: @Model.Time</p><p>Seat No: @Model.Ticket.SeatNumber</p>
-                        </div>
-                        <hr />
-                        <h3>Passenger:</h3>
+        <div class="ticket container col-md-12 mb-5">
+            <div class="my-3 mx-1 col-md-8">
+
+                <div class="ticket-info ">
+                    <p class="date">
+                        <span>DATE</span>
+                        <span class="june-29">@Model.Date</span>
+                        <span><small class="">Time: @Model.Time</small></span>
+                    </p>
+                    <div class="show-name">
+                        <h1>Costumer: </h1>
                         <h2>@Model.Ticket.CostumerName @Model.Ticket.CosturmerSurname</h2>
-                        <h4>Price:<small>@Model.Ticket.Price ₺</small></h4>
-                        <hr />
-                        <h5>
-                            @Model.Ticket.TravelFrom <i class="fa-solid fa-arrow-right"></i>
-                            @Model.Ticket.TravelTo
-                        </h5>
+                    </div>
+                    <div class="time">
+                        <p>Price:<span> ₺@Model.Ticket.Price</span></p>
+                        <p>Seat Number: <span>*</span>@Model.Ticket.SeatNumber</p>
+                    </div>
+                    <p class="location">
+                        <span>@Model.Ticket.TravelFrom</span>
+                        <span class="separator"><i class="fa-solid fa-person-walking-luggage"></i></span><span>@Model.Ticket.TravelTo</span>
+                    </p>
+                </div>
+            </div>
+            <div class=" col-md-4 ">
+                <div class="text-center ">
+                    <div class="">
+                        <img class="mt-5 w-50" src="https://external-preview.redd.it/cg8k976AV52mDvDb5jDVJABPrSZ3tpi1aXhPjgcDTbw.png?auto=webp&s=1c205ba303c1fa0370b813ea83b9e1bddb7215eb" alt="QR code">
+                    </div>
+                    <div>
+                        PRN NUMBER: #@Model.Ticket.PeronNumber
                     </div>
                 </div>
             </div>
@@ -48,43 +52,6 @@
                 </div>
 
             </div>
-
         </div>
-
-        <table class="table table table-bordered shadow-sm d-none">
-            <thead>
-                <tr>
-                    <th style="width:40px;">Ticket No</th>
-                    <th style="width:200px;">Name</th>
-                    <th style="">Phone Number</th>
-                    <th style="width:105px;">Travel From</th>
-                    <th style="width:105px;">Travel To</th>
-                    <th style="width:60px;">Seat Number</th>
-                    <th style="width:80px;">Price</th>
-                    <th style="width:200px;">Date - Time</th>
-
-                    <th style="width:75px;">Sefer No</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>@Model.Ticket.TicketId</td>
-                    <td>@Model.Ticket.CostumerName @Model.Ticket.CosturmerSurname</td>
-
-                    <td>@Model.Ticket.PhoneNumber</td>
-                    <td>@Model.Ticket.TravelFrom</td>
-                    <td>@Model.Ticket.TravelTo</td>
-                    <td>@Model.Ticket.SeatNumber</td>
-                    <td>@Model.Ticket.Price ₺</td>
-                    <td>@Model.Date - @Model.Time</td>
-
-                    <td>@Model.Ticket.RouteId</td>
-
-                </tr>
-            </tbody>
-        </table>
-        <br />
-    </div>
-
+        </div>
 </form>
